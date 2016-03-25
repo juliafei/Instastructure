@@ -44,5 +44,5 @@ Data Schema:
 		- Password (hashed)
 		- Jobs (requests that need to be attended to)
 - Pods
-	- Parse
+	- Firebase
 	- AFNetworking
