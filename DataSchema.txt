@@ -1,0 +1,48 @@
+Data Schema:
+
+- AppDelegate (will have the Parse init)
+- ViewControllers
+	- HomeViewController
+	- NewRequestViewController
+	- ProfileViewController
+	- LoginViewController
+- Views
+	- RequestCell
+- Models
+	- Request 
+		- State (New, In Review, In Progress, Fixed)
+		- Author
+		- Category
+		- Title
+		- Description/Primary Workaround
+		- Photo (and media url)
+		- Location (lat/lon for pins and geofence)
+		- VerifiedVotes (up makes more visible, down for less)
+		- Flags (duplicate, inaccurate, etc.)
+	- Workaround
+		- Id
+		- Description
+		- UpVoteCount
+		- DownVoteCount
+		- Author
+	- Category
+		- Id
+		- Name
+	- StudentUser
+		- Name
+		- Id
+		- Email
+		- Password (hashed)
+		- Facebook/Twitter/Google Id
+		- Posts
+		- Workarounds
+		- WatchedRequests
+	- OrganizationUser
+		- Name
+		- Id
+		- Email
+		- Password (hashed)
+		- Jobs (requests that need to be attended to)
+- Pods
+	- Parse
+	- AFNetworking
