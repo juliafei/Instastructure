@@ -6,6 +6,7 @@ use_frameworks!
 target 'Instastructure' do
     pod 'Parse'
     pod 'AFNetworking'
+    pod 'IQDropDownTextField'
 end
 
 target 'InstastructureTests' do

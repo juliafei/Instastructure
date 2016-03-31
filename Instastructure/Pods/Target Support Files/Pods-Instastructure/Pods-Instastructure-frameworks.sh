@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Instastructure/AFNetworking.framework"
   install_framework "Pods-Instastructure/Bolts.framework"
+  install_framework "Pods-Instastructure/IQDropDownTextField.framework"
   install_framework "Pods-Instastructure/Parse.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Instastructure/AFNetworking.framework"
   install_framework "Pods-Instastructure/Bolts.framework"
+  install_framework "Pods-Instastructure/IQDropDownTextField.framework"
   install_framework "Pods-Instastructure/Parse.framework"
 fi

@@ -14,11 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.initializeWithConfiguration(
             ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
-                configuration.applicationId = "InstaStructure"
+                configuration.applicationId = "Instastructure"
                 configuration.clientKey = "fhq97wyefwihf987qhw3087efyq30w"
                 configuration.server = "https://instastructure.herokuapp.com/parse"
             })
@@ -29,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("There is a current user")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TabBarController")
             
             window?.rootViewController = vc
         }
