@@ -23,8 +23,8 @@ class RequestCell: UITableViewCell {
         didSet {
             titleLabel.text = request["title"] as? String
             descriptionLabel.text = request["description"] as? String
-            timeLabel.text = "" //figure out
-            voteCountLabel.text = request["voteCount"] as? String
+            timeLabel.text = request["timestamp"] as? String
+            voteCountLabel.text = /*request["voteCount"] as? String*/ "0"
         }
     }
     

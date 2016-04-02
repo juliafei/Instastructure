@@ -11,7 +11,9 @@ import Parse
 
 class Request: NSObject {
     
-    class func submitRequest (image: UIImage?, withTitle title: String?, withDescription description: String?, withCategory category: String?, withCompletion completion: PFBooleanResultBlock?) {
+    let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
+    
+    class func submitRequest (image: UIImage?, withTitle title: String?, withDescription description: String?, withCategory category: String?, withTimestamp timestamp: String?, withCompletion completion: PFBooleanResultBlock?) {
         
         // Create parse object PFObject
         let request = PFObject(className: "Request")
@@ -23,6 +25,7 @@ class Request: NSObject {
         request["description"] = description
         request["category"] = category
         request["voteCount"] = 0
+        request["timestamp"] = timestamp
         
         // Save object (following function will save the object in Parse asynchronously)
         request.saveInBackgroundWithBlock(completion)

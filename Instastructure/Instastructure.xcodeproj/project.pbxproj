@@ -136,11 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				5D81592A1CA9D3DF00BA42C4 /* AppDelegate.swift */,
-				5D8ECE591CAC4A4500BF66B5 /* Views */,
 				5D8159581CA9D4AE00BA42C4 /* ViewControllers */,
 				5D8ECE601CAC606F00BF66B5 /* Models */,
-				5D8159311CA9D3E000BA42C4 /* Assets.xcassets */,
+				5D8ECE591CAC4A4500BF66B5 /* Views */,
 				5D8ECE611CAC609200BF66B5 /* Storyboards */,
+				5D8159311CA9D3E000BA42C4 /* Assets.xcassets */,
 				5D8159361CA9D3E000BA42C4 /* Info.plist */,
 			);
 			path = Instastructure;

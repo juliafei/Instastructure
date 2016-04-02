@@ -20,7 +20,7 @@ class RequestViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         
         descriptionTextView.layer.borderWidth = 1
-        categoryField.itemList = ["ONE","TWO","THREE"]
+        categoryField.itemList = ["Elevators and Escalators","Plumbing","Lighting", "Outlets","Streets and Sidewalks","Staff","HVAC","Cafeteria","Other"]
         categoryField.isOptionalDropDown = false
 
     }
@@ -58,7 +58,10 @@ class RequestViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onSubmit(sender: AnyObject) {
-        Request.submitRequest(issueImageView.image, withTitle: titleField.text, withDescription: descriptionTextView.text, withCategory: categoryField.selectedItem) { (success: Bool, error: NSError?) -> Void in
+        
+        let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
+        
+        Request.submitRequest(issueImageView.image, withTitle: titleField.text, withDescription: descriptionTextView.text, withCategory: categoryField.selectedItem, withTimestamp: timestamp) { (success: Bool, error: NSError?) -> Void in
             self.titleField.text = nil
             self.descriptionTextView.text = nil
             self.issueImageView.image = nil
