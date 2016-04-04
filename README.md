@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 - [ ] Multiple themes
 - [ ] Multiple priority tiers (!!!, !!, !).
 
-Here is a video walkthrough of the app:
+Here is a video walkthrough of the app :)
 
 <img src='http://i.imgur.com/7ffoLlO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
