@@ -9,14 +9,11 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController {
+class OrganizationSignUpViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var organizationField: UITextField!
-    @IBOutlet weak var organizationButton: UIButton!
-    @IBOutlet weak var organizationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +35,7 @@ class SignUpViewController: UIViewController {
         newUser.username = usernameField.text
         newUser.email = emailField.text
         newUser.password = passwordField.text
-        newUser["organizationId"] = organizationField.text
+        newUser["organizationId"] = ""
         
         // call sign up function on the object
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in

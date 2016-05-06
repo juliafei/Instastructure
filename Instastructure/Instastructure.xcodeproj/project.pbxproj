@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D3F0D9D1CAB17F6004E8A19 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F0D9C1CAB17F6004E8A19 /* RequestCell.swift */; };
+		5D4E841D1CBEE15C00BA3708 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4E841C1CBEE15C00BA3708 /* Organization.swift */; };
+		5D4E841F1CC8D4C100BA3708 /* OrganizationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4E841E1CC8D4C100BA3708 /* OrganizationSignUpViewController.swift */; };
 		5D81592B1CA9D3DF00BA42C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81592A1CA9D3DF00BA42C4 /* AppDelegate.swift */; };
 		5D8159301CA9D3E000BA42C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D81592E1CA9D3E000BA42C4 /* Main.storyboard */; };
 		5D8159321CA9D3E000BA42C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8159311CA9D3E000BA42C4 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		34B49FCDF8485421EA3CEA55 /* Pods-Instastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instastructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instastructure/Pods-Instastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		5D3F0D9C1CAB17F6004E8A19 /* RequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		5D4E841C1CBEE15C00BA3708 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		5D4E841E1CC8D4C100BA3708 /* OrganizationSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationSignUpViewController.swift; sourceTree = "<group>"; };
 		5D8159271CA9D3DF00BA42C4 /* Instastructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instastructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81592A1CA9D3DF00BA42C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D81592F1CA9D3E000BA42C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8ECE5E1CAC606900BF66B5 /* Request.swift */,
+				5D4E841C1CBEE15C00BA3708 /* Organization.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				5D8159591CA9D4CA00BA42C4 /* LoginViewController.swift */,
 				5D8ECE5A1CAC50F400BF66B5 /* SignInViewController.swift */,
 				5D8ECE5C1CAC510800BF66B5 /* SignUpViewController.swift */,
+				5D4E841E1CC8D4C100BA3708 /* OrganizationSignUpViewController.swift */,
 			);
 			name = StarterViewControllers;
 			sourceTree = "<group>";
@@ -411,7 +417,9 @@
 				5D8ECE5B1CAC50F400BF66B5 /* SignInViewController.swift in Sources */,
 				5D8ECE661CAC835800BF66B5 /* ProfileViewController.swift in Sources */,
 				5D8ECE641CAC834200BF66B5 /* RequestViewController.swift in Sources */,
+				5D4E841D1CBEE15C00BA3708 /* Organization.swift in Sources */,
 				5D81595C1CA9D8F800BA42C4 /* HomeViewController.swift in Sources */,
+				5D4E841F1CC8D4C100BA3708 /* OrganizationSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
